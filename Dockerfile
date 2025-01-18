@@ -14,9 +14,9 @@ RUN curl -fsSL https://deb.nodesource.com/setup_21.x | bash - \
 
 WORKDIR /app
 
-COPY . .
+# COPY . .
 
-RUN npm install
+# RUN npm install
 
 EXPOSE 3000
 
