@@ -12,12 +12,6 @@ RUN apt-get update && apt-get install -yq \
 RUN curl -fsSL https://deb.nodesource.com/setup_21.x | bash - \
     && apt-get install -y nodejs
 
-WORKDIR /workspaces
-
-COPY . .
-
-RUN npm install
-
 EXPOSE 3000
 
 CMD ["npm", "run", "dev"]
